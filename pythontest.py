@@ -46,8 +46,10 @@ def test():
 		print (index)
 		print (fruits[index])
 	print ("Good bye!")
+	
+	#break 语句
 
-	for letter in "Python": 
+	for letter in "Python":
 		if letter == "h":
 			break;
 		print ("Current Letter:",letter)
@@ -58,11 +60,37 @@ def test():
 		var = var - 1
 		if var == 5:
 			break
-
 		print ("GoodBye!")
 
-
+    	# continue 语句 在Python 中, continue 语句返回控制while循环的开始. continue 语句拒绝执行循环的当前爹地所有剩余的语句, 并移动控制回到循环的顶部(开始位置).
+    	# continue 语句 可以在while 和 for 两个循环中使用.
 	
+	for letter in "Python":
+		if letter == "h":
+			continue
+		print("CurrentLetter ",letter)
+	
+	var = 10
+	
+	while var > 0:	
+		print ("CurrentVar:",var)
+		var -= 1
+		if var == 5:
+			continue
+
+	print("GoodBye!")
+
+
+	# pass 语句
+	for letter in "Python":
+		if letter == "h":
+			pass
+			print ("This is pass block")
+		print ("CurrentLetter:",letter)
+	
+	print ("GoodBye")
+
+	print(len(range(44, 13000, 89 )))
 	
 if __name__ == "__main__":
         test()
